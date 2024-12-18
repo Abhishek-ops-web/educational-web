@@ -1,0 +1,207 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+nav {
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #0073e6;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/* Main Layout */
+.courses-section {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.filter-sidebar {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter-sidebar h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.filter-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filter-sidebar li {
+    margin: 8px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.filter-sidebar input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Courses List */
+.courses-list {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.courses-list h1 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Course Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Course Card */
+.course-card {
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.course-info {
+    flex-grow: 1;
+}
+
+.category-label {
+    background-color: #0073e6;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+
+.course-info h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.instructor,
+.details {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    color: #0073e6;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.free-button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.view-more {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.pagination-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .courses-section {
+        flex-direction: row;
+    }
+
+    .filter-sidebar {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}

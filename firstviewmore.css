@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+nav {
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+nav span {
+    color: #555;
+}
+
+/* Main Course Section */
+.course-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.course-content {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Course Header */
+.course-header h1 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.course-header .category-label {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+
+.course-header .details {
+    font-size: 0.9em;
+    color: #777;
+    display: flex;
+    gap: 10px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #0073e6;
+    font-size: 1em;
+}
+
+.tab.active {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #ff6600;
+}
+
+/* Tab Content */
+/* .tab-content {
+    padding: 20px 0;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+} */
+
+
+.tab-link {
+    text-decoration: none;
+}
+.tab-link .tab {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tab-link .tab.active {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Sidebar Section */
+.course-sidebar {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.course-sidebar img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.price-section {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discounted-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.start-now-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+ 
+
+/* Comment Section */
+.comment-section {
+    margin-top: 40px;
+}
+
+.comment-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-section input,
+.comment-section textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.comment-section button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+    }
+
+    .course-sidebar {
+        width: 100%;
+    }
+}
+
+.details i {
+    margin-right: 5px;
+    color: orangered;
+}

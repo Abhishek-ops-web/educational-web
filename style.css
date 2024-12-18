@@ -1,0 +1,140 @@
+/* General Font and Color (Inherit from your existing styles) */
+body {
+    font-family: 'Roboto', sans-serif; /* Assuming your code uses Roboto or similar */
+    background-color: #f8f8f8; /* Light gray for the page background */
+    color: #333; /* Main text color */
+}
+
+a {
+    text-decoration: none;
+    color: #0073e6; /* Link color */
+}
+
+/* Latest Articles Section */
+.latest-articles {
+    padding: 40px 0;
+    background-color: #ffffff; /* Keeping article section white */
+    color: #333; /* Ensuring consistency with existing text colors */
+    text-align: center;
+}
+
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border-bottom: 2px solid #e0e0e0; /* Added border to divide header */
+}
+
+.articles-header h1 {
+    font-size: 2em;
+    color: #333; /* Matching with your primary text color */
+}
+
+.all-articles-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.subheading {
+    font-size: 1.1em;
+    color: #555; /* Subtle gray for subheading */
+    margin-bottom: 30px;
+}
+
+.article-cards-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8; /* Same background color for cards container */
+}
+
+.article-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Adding hover effect */
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.article-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-card p.date {
+    font-size: 0.9em;
+    color: #999; /* Date color to blend in */
+    margin-bottom: 10px;
+}
+
+.article-card p.description {
+    font-size: 1em;
+    color: #666; /* Slightly muted color for descriptions */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-container div {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links ul, .footer-programs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-programs ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a, .footer-programs ul li a {
+    color: white;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
